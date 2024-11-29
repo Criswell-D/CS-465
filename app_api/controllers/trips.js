@@ -17,7 +17,7 @@ const tripsList = async (req, res) => {
   }
 };
 const tripsFindByCode = async (req, res) => {
-  const q = await Model.find({ 'code': req.params.tripCode }).exec();
+  const q = await Model.find({ code : req.params.tripCode }).exec();
 
   // console.log(q);
 
