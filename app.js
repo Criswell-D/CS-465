@@ -13,7 +13,9 @@ var apiRouter = require('./app_api/routes/index');
 
 var handlebars = require('hbs');
 
-require('./app_api/models/db');
+var passport = require("passport");
+require("./app_api/models/db");
+require("./app_api/config/passport");
 
 
 
